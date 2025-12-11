@@ -1,11 +1,12 @@
 from vpython import *
-import serial
+import serial 
 import math
 
-# 修改成你的 COM port
+# 1234
+# 修改成你的 COM por
 ser = serial.Serial("COM7", 115200)
 scene = canvas(title="MPU6050 3D Visualization", width=800, height=600, background=color.white)
-
+    
 # 建立一個代表飛機的物件
 aircraft = box(length=1, height=0.2, width=0.5, color=color.red)
 
